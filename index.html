@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dhenkript Shop</title>
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Custom CSS Link -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="navbar-content">
+        <h1 class="logo">Dhenskript Shop</h1>
+        <ul class="links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <section class="buttons">
+          <button id="cart-button" class="cart-button">
+            <i class="fas fa-cart-plus"></i>
+            <div id="count-circle" class="count-circle">1</div>
+          </button>
+          <button class="burger-menu">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </section>
+      </div>
+    </nav>
+    <!-- Hero Section -->
+    <main class="hero">
+      <section class="banner">
+        <h2 class="banner-text">Furniture Collection</h2>
+        <a href="#products" class="banner-button">Shop Now</a>
+      </section>
+    </main>
+    <!-- Products Section -->
+    <section id="products" class="products">
+      <h2 class="products-section-title">Our Products</h2>
+      <ul id="product-cards" class="product-cards"></ul>
+    </section>
+    <aside id="cart" class="cart">
+      <button id="close-cart" class="close-cart">
+        <i class="fa-solid fa-x"></i>
+      </button>
+      <h2 class="cart-title">Your Cart</h2>
+      <ul id="cart-products" class="cart-products"></ul>
+      <button id="clear-products" class="clear-products">Clear All</button>
+      <h3 id="total-cost" class="total-cost">Total Cost:</h3>
+    </aside>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
